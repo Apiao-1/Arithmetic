@@ -9,8 +9,8 @@ using namespace std;
 int main(){
     char str[100];
     while (scanf("%s",str) != EOF) {
-        int height,bottom,i,k;
-        int len = strlen(str);
+        int height = 0,bottom,i,k;
+        int len = (int)strlen(str);
         for (bottom=3; bottom<len; bottom++) {
             if((len + 2 - bottom)%2 == 0){
                 height = (len + 2-bottom)/2;

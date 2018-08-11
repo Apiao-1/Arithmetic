@@ -22,7 +22,7 @@ string getStand(string str,int &e){
         while (str[i] == '0') {//找到非小数的首位
             str.erase(str.begin());
         }
-        e = (str.find('.')!=EOF)?str.find('.'):str.length();
+        e = ((int)str.find('.')!=EOF)?(int)str.find('.'):(int)str.length();
     }
     if(str.length()==0)e=0;//处理0和0.0的情况
     for (int i=0; i<tmp; i++) {//开始处理有效数字
