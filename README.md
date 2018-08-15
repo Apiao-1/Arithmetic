@@ -64,3 +64,9 @@ dijkstra(涉及到点权值及多条最短路径的计数)
 #### 1073 Scientific Notation (20) 
 
 将科学计数法还原成一般形式
+
+#### 1057 Stack (30) 
+
+栈+树状数组+二分（较难）
+
+树状数组的理解见 [](https://www.cnblogs.com/acgoto/p/8583952.html#4041449)
