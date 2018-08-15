@@ -69,4 +69,4 @@ dijkstra(涉及到点权值及多条最短路径的计数)
 
 栈+树状数组+二分（较难）
 
-树状数组的理解见 [](https://www.cnblogs.com/acgoto/p/8583952.html#4041449)
+树状数组的理解见 ：[掌握树状数组](https://www.cnblogs.com/acgoto/p/8583952.html#4041449)
