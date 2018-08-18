@@ -48,21 +48,21 @@ int main(){
 //        }
 //        dp[0] = a[0];
 //        int max = a[0],flag = 0,len = 0;
-//        for (int i = 1; i<n; i++) {
-//            if (dp[i-1] > 0) {
-//                dp[i] = dp[i-1] + a[i];
-//                len++;
-//            }else{
-//                dp[i] = a[i];
-//                len = 0;
-//            }
-//            length[i] = len;
-//
-//            if (dp[i] > max) {
-//                max = dp[i];
-//                flag = i;
-//            }
-//        }
+for (int i = 1; i<n; i++) {
+    if (dp[i-1] > 0) {
+        dp[i] = dp[i-1] + a[i];
+        len++;
+    }else{
+        dp[i] = a[i];
+        len = 0;
+    }
+    length[i] = len;
+    
+    if (dp[i] > max) {
+        max = dp[i];
+        flag = i;
+    }
+}
 //        if (max < 0) {
 //            cout << 0 << " " << a[0] << " " << a[n-1] << endl;
 //        }else
@@ -70,3 +70,20 @@ int main(){
 //    }
 //    return 0;
 //}
+
+for (int i = 1;i <= n;i ++) { //按照袭击时间顺序确定每一个dp[i]
+    int tmax = 1; //最大值的初始值为1，即以其结尾的最长不增子序列长度至少为
+    1
+    for (int j = 1;j < i;j ++) { //遍历其前所有导弹高度
+        if (list[j] >= list[i]) { //若j号导弹不比当前导弹低
+            tmax = max(tmax,dp[j] + 1); //将当前导弹排列在以j号导弹结尾
+            的最长不增子序列之后，计算其长度dp[j] + 1,若大于当前最大值，则更新最大值
+        }
+    }
+    dp[i] = tmax; //将dp[i]保存为最大值
+}
+int ans = 1;
+for (int i = 1;i <= n;i ++) {
+    ans = max(ans,dp[i]);
+} //找到以每一个元素结尾的最长不增子序列中的最大值,该最大值即为答案
+printf("%d\n",ans); //输出
