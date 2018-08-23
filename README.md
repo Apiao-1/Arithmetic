@@ -217,3 +217,5 @@ AVL数+层序遍历+判断是否是完全树
 
 考察点很全面，重要
 
+平衡二叉树详见https://www.cnblogs.com/zhangbaochong/p/5164994.html
+
