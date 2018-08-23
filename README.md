@@ -180,3 +180,40 @@ BFS或DFS都可以，图的遍历
 2.注意到该条件后，最后判断是否在17点以前开始任务不应减去cost[i]进行判断（cost[i]在过程中就已被改变，故需在开始新设一个数组）
 
 3.在初始化排队时，没注意到无法把n个窗口都排满的情况（注意到了在黄线内未排满，但忽略了人太少以致窗口都排不满)
+
+#### 1061 Dating（20）
+
+终于看懂了题，一开始对题目中的“since the first common capital English letter (case sensitive) shared by the first two strings is the 4th capital letter D”，产生了误解（我说原序列中相等的位置明明是6呀，怎么会是4呢）
+
+此题WA的原因——每次输出时分秒时注意控制%02d，不能光控制了分，不控制时
+
+#### 1065 A+B and C (64bit)（20
+
+ 方法一，longlong类型再判断sum是否溢出
+
+ 因为A、B的大小为[-2^63, 2^63]，用long long 存储A和B的值，以及他们相加的值sum：
+
+ 如果A > 0, B < 0 或者 A < 0, B > 0，sum是不可能溢出的
+
+ 如果A > 0, B > 0，sum可能会溢出，sum范围理应为(0, 2^64 – 2]，溢出得到的结果应该是[-2^63, -2]是个负数，所以sum <= 0时候说明溢出了
+
+ 如果A < 0, B < 0，sum可能会溢出，同理，sum溢出后结果是大于0的，所以sum >= 0 说明溢出了
+
+ 
+
+ 这里需特别注意sum = 0的溢出判断，不然PAT最后一组测试用例过不去
+
+
+
+方法二，直接用long double类型，求出的sum不会溢出
+
+#### 1119 Pre- and Post-order Traversals（30）
+
+给出前序后序，转中序，递归求解
+
+#### 1123 Is It a Complete AVL Tree（30)⭐️
+
+AVL数+层序遍历+判断是否是完全树
+
+考察点很全面，重要
+

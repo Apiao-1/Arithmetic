@@ -1,4 +1,4 @@
-//https://www.nowcoder.com/practice/1284469ee94a4762848816a42281a9e0?tpId=40&tqId=21335&tPage=1&rp=1&ru=/ta/kaoyan&qru=/ta/kaoyan/question-ranking
+//https://www.nowcoder.com/practice/6e732a9632bc4d12b442469aed7fe9ce?tpId=40&tqId=21544&tPage=1&rp=1&ru=/ta/kaoyan&qru=/ta/kaoyan/question-ranking
 #include <iostream>
 #include <cstring>
 #include <string>
