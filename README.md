@@ -219,3 +219,10 @@ AVL数+层序遍历+判断是否是完全树
 
 平衡二叉树详见https://www.cnblogs.com/zhangbaochong/p/5164994.html
 
+#### 1074 Reversing Linked List（25）
+
+此类链表题特别注意列表长度不一定是N（虽然给出了N个Node但他们不一定连续）,固需加一个cnt处理
+
+#### 1069 The Black Hole of Numbers（20）
+
+两个点要注意，1.输入虽说是四位数，但可以是0001，固当str位数不足时要记得补0，2.特殊的测试用例，6174，要用do-while语句，否则程序什么都不会输出
