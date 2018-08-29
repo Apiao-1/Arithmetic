@@ -1,4 +1,4 @@
-//1019 Prime Factors (25)https://www.nowcoder.com/pat/5/problem/4112
+//1059 Prime Factors (25)https://www.nowcoder.com/pat/5/problem/4112
 #include <iostream>
 #include <algorithm>
 #include <cmath>
