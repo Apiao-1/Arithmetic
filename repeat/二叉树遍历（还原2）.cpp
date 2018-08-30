@@ -1,4 +1,5 @@
 //https://www.nowcoder.com/practice/6e732a9632bc4d12b442469aed7fe9ce?tpId=40&tqId=21544&tPage=1&rp=1&ru=/ta/kaoyan&qru=/ta/kaoyan/question-ranking
+//注意返回条件是s1>e1，不取等号
 #include <iostream>
 #include <cstring>
 #include <string>

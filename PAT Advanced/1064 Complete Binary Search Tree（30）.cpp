@@ -1,5 +1,5 @@
 //1064 Complete Binary Search Tree（30）https://pintia.cn/problem-sets/994805342720868352/problems/994805407749357568
-//利用完全二叉树的性质就可以很简单地解决这道题
+//利用完全二叉树的性质就可以很简单地解决这道题,注意该方法只适用于完全二叉树！
 #include <iostream>
 #include <algorithm>
 #include <string>
@@ -20,6 +20,19 @@ void inOrder(int i){
     ans[i] = a[tmp++];
     inOrder(2*i+1);
 }
+void postOrder(int i){
+    if (i > n) {
+        return ;
+    }
+    postOrder(2*i);
+    postOrder(2*i+1);
+    if (!flag) {
+        cout <<tree[i];
+        flag = 1;
+    }else
+        cout << " " << tree[i];
+    
+}
 
 int main(){
     cin >> n;
@@ -34,6 +47,7 @@ int main(){
         }else
             cout << " " << ans[i];
     }
+//        postOrder(1);后序遍历
     cout << endl;
     return 0;
 }
