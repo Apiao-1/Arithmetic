@@ -78,7 +78,7 @@
 #include <algorithm>
 #include <cmath>
 using namespace std;
-long long convert(string n, long long radix) {//任意进制转十进制
+long long convert(string n, long long radix) {
     long long sum = 0;
     int index = 0, temp = 0;
     for (auto it = n.rbegin(); it != n.rend(); it++) {
