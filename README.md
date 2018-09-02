@@ -286,3 +286,11 @@ Dijkstra算法 + DFS，最短路径，边权
 #### 1028 List Sorting（25）
 
 注意一下字典序的排序，如果是string类的直接排，如果是char类型的，用strcmp(a.name, b.name) < 0
+
+#### 1134 Vertex Cover（25）
+
+传统的邻接表邻接图的方式去做都会超时，比较巧妙此题保存的是一条边的两个节点，之后在set查询的节点集合中，依次用find查找每条边的两个节点
+
+#### 1110 Complete Binary Tree（25)
+
+完全二叉树的判断（区别于满二叉树）
