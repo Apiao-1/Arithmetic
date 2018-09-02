@@ -294,3 +294,11 @@ Dijkstra算法 + DFS，最短路径，边权
 #### 1110 Complete Binary Tree（25)
 
 完全二叉树的判断（区别于满二叉树）
+
+#### 1090 Highest Price in Supply Chain（25）
+
+DFS+树的遍历，1079同理
+
+#### 1040 Longest Symmetric String（25）
+
+DP，求回文串，将原序列逆序后，即求解两个序列的最长公共子串

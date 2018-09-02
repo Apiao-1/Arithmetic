@@ -1,3 +1,5 @@
+
+
 ### 最长公共子序列（LCS）与最长公共子串（DP）
 
 ##### 1.子串与子序列的区别
@@ -63,6 +65,8 @@ int lcs(String str1, String str2) {
     return result;  
 } 
 ```
+###### 最长回文串问题
+可转换为最长子串问题，即将原始序列reverse，再求解该序列和原序列的最长公共子串即可，例题见：[PAT 1040](https://pintia.cn/problem-sets/994805342720868352/problems/994805446102073344)
 ___
 
 ### 允许重复元素的LCS
