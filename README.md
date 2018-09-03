@@ -302,3 +302,15 @@ DFS+树的遍历，1079同理
 #### 1040 Longest Symmetric String（25）
 
 DP，求回文串，将原序列逆序后，即求解两个序列的最长公共子串
+
+#### 1112 Stucked Keyboard（20)
+
+用map的方法会更为简单，就不用getIndex转化了，此题需注意当i= len时，无论str[i] 与 str[i-1]是否相等都需要再做一次
+
+#### 1115 Counting Nodes in a BST（30)
+
+BST建树+DFS
+
+#### 1099 Build A Binary Search Tree（30)
+
+利用BST的性质，中序遍历进行赋值
