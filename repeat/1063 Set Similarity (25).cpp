@@ -39,9 +39,9 @@ void query1(int q1,int q2){
     int x = 0,y = vec[q2].size();
     for (auto itor = vec[q1].begin(); itor != vec[q1].end(); itor++) {
         if (vec[q2].count(*itor) > 0) {
-            x++;
+            x++;//求交集
         }else
-            y++;
+            y++;//求合集
     }
     printf("%.1f%%\n",100.0*x/y);
 }

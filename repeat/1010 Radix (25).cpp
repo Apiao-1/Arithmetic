@@ -1,4 +1,4 @@
-//1010 Radix (25)（25 分）https://pintia.cn/problem-sets/994805342720868352/problems/994805507225665536
+ //1010 Radix (25)（25 分）https://pintia.cn/problem-sets/994805342720868352/problems/994805507225665536
 //做了这道题我才发现进制原来可以有诸如2792614。。那么大
 //没有用二分有两个测试用例超时，得23分，正解见后文
 //#include <iostream>
